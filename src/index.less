@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #CCCCCC;
+  height: 40px;
+  outline-offset: -1px;
+  outline: 1px solid #CCCCCC;
+  -webkit-border-radius: 2px;
+  border: 1px solid #CCCCCC;
+}
+
+//设置table 文本溢出的问题
+table {
+  table-layout: fixed;
+}
+
+table td {
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+
+// 隐藏百度地图的脚标信息
+.anchorBL{
+  display: none !important;
+}
+
+// 分页总数据条数显示位置
+.ant-pagination-total-text{
+  float: right !important;
+  margin-left: 15px;
+  line-height: 32px;
+}
+
+//iconfont
+.iconfont{
+  margin-right: 10px;
+}
+
+
+//左侧菜单--start
+.ant-layout-sider{
+  background-color: #345B80 !important;
+}
+.ant-menu-dark{
+  background: #345B80 !important;
+}
+//标题颜色
+.ant-menu-inline .ant-menu-submenu-title{
+  color:#879EB3 !important;
+  font-size: 14px !important;
+}
+.ant-menu-inline .ant-menu-item{
+  font-size: 14px !important;
+}
+//下拉菜单容器
+.ant-menu-dark .ant-menu-inline.ant-menu-sub{
+  background: #345B80 !important;
+  box-shadow: none !important;
+}
+//当前激活项
+.ant-menu.ant-menu-dark .ant-menu-item-selected{
+  background-color:#5286B5 !important;
+  color:#89C5FF !important;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected:before{
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 3px;
+  background: #95CDFF;
+  left: 0;
+}
+//每一个子项
+.ant-menu-inline .ant-menu-item{
+  margin-top:0 !important;
+}
+//左侧菜单--end
